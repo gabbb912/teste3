@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra e Venda de Livros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        .intro, .destaques, .lista-livros, .contato {
+            margin: 20px;
+        }
+
+        .livros {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .livro {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .livro img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Livraria Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#livros">Livros</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Home -->
+        <section id="home" class="intro">
+            <h2>Compre e venda livros facilmente!</h2>
+            <p>Encontre os melhores livros novos e usados na nossa livraria online.</p>
+        </section>
+
+        <!-- Seção Livros em Destaque -->
+        <section id="livros" class="destaques">
+            <h2>Livros em Destaque</h2>
+            <div class="livros">
+                <div class="livro">
+                    <img src="livro1.jpg" alt="Livro 1">
+                    <h3>Título do Livro 1</h3>
+                    <p>Autor: Autor 1</p>
+                    <p>Preço: R$ 50,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="livro">
+                    <img src="livro2.jpg" alt="Livro 2">
+                    <h3>Título do Livro 2</h3>
+                    <p>Autor: Autor 2</p>
+                    <p>Preço: R$ 60,00</p>
+                    <button>Comprar</button>
+                </div>
+                <!-- Adicione mais livros aqui -->
+            </div>
+        </section>
+
+        <!-- Seção Formulário de Contato -->
+        <section id="contato" class="contato">
+            <h2>Entre em Contato Conosco</h2>
+            <form action="#">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Livraria Online. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
